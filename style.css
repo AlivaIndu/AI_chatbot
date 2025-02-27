@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(45,52,59);
+}
+.chat-container{
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 17px;
+    overflow: auto;
+}
+.user-chatbox{
+    width: 60%;
+    position: relative;
+    left: 40%;
+}
+#user-img{
+    position: absolute;
+    right: 0px;
+    filter: drop-shadow(2px 2px 10px black);
+}
+.user-chat{
+    width: 90%;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    border-radius: 40px 0px 40px 40px;
+    box-shadow: 2px 2px 10px black;
+}
+.ai-chatbox{
+    width: 60%;
+    position: relative;
+}
+#ai-img{
+    position: absolute;
+    left: 0px;
+    filter: drop-shadow(2px 2px 10px black);
+}
+.ai-chat{
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.408);
+    padding: 20px;
+    color: white;
+    position: relative;
+    left: 10%;
+    border-radius: 0px 40px 40px 40px;
+    box-shadow: 2px 2px 10px black;
+}
+.prompt{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#msg{
+    width: 50%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.prompt button{
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.prompt button i{
+    color: white;
+}
+.prompt button:hover{
+    background-color: rgba(0, 0, 0, 0.368);
+}
+.load{
+    color:  rgba(0, 0, 0, 0.408);
+
+}
